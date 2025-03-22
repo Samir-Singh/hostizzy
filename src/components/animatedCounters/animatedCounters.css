@@ -1,0 +1,28 @@
+.animatedCounterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  flex-wrap: wrap;
+}
+.animatedCounterCard {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 260px;
+  padding: 20px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  /* border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; */
+  /* border-top: 4px solid #fe5858; */
+  border-top: solid 5px #fe5858;
+  border-bottom: solid 5px #fe5858;
+}
+.numbersValue {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}

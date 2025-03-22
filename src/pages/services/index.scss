@@ -1,0 +1,366 @@
+@import "../../styles/colors.scss";
+@import "../../styles/dimentions.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400&family=Inter:wght@300;400&family=Nunito:wght@600&family=Poppins:wght@400;600&display=swap");
+
+.service_main_div {
+  padding: 10px 0px;
+
+  .service_heading {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0px 100px;
+  }
+
+  .home_para {
+    font-weight: 400;
+    color: #181a20;
+    padding: 0px 100px;
+  }
+
+  .key_services_parent_div {
+    .key_services_div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2%;
+      h1 {
+        text-align: center;
+      }
+      .membership_plan_heading {
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        margin: 30px 0px;
+        margin-bottom: 0%;
+      }
+    }
+  }
+
+  .plan_para {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .button_main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 30px;
+
+    .bill_para {
+      font-size: 14px;
+    }
+  }
+
+  .contact_us_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px;
+    background-color: #f7f7f7;
+
+    .need_help_para {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .expert_para {
+      margin-top: 20px;
+    }
+
+    .right_div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .contactUs_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid black;
+        padding: 15px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .phone_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: black;
+        padding: 15px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
+
+.blog___slider_form_section {
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
+  max-height: 800px;
+  background-image: url("../../assets/images/homestay3.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+
+  @media (max-width: 975px) {
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 5px;
+    height: 90%;
+  }
+
+  .blog___image__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 975px) {
+      width: 100%;
+      margin-top: 30%;
+    }
+
+    .blog___image__text_container {
+      height: 100px;
+      border-left: 6px solid $primaryColor2;
+      padding: 0px 0px 0px 15px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .blog__image_text_head {
+        color: $white;
+        font-size: 50px;
+        font-weight: $fontWeight7;
+
+        @media (max-width: 575px) {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+.blog_container_single {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .blog_details_section {
+    // height: 380px;
+    margin: 20px 0px;
+    border-radius: 14px;
+    overflow: hidden;
+
+    @media (max-width: 993px) {
+      // height: fit-content;
+    }
+
+    .blog__details {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .blog_image_container {
+        cursor: pointer;
+      }
+
+      .blog_details_text {
+        height: calc(300px - 190px);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: "DM Sans ";
+
+        @media (max-width: 993px) {
+          height: fit-content;
+        }
+
+        .blog_details_heading {
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: $fontWeight6;
+          margin-bottom: 16px;
+          font-family: DM Sans, sans-serif;
+
+          @media (max-width: 993px) {
+            font-size: 20px;
+          }
+        }
+
+        .read___more__button {
+          color: $white;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          font-family: DM Sans, sans-serif;
+        }
+
+        .blog_details__sub_data {
+          font-size: 13px;
+
+          @media (max-width: 993px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .active__card {
+    transition: all 0.4s ease-in-out;
+    background-color: $primaryColor;
+    color: $white;
+  }
+}
+
+.keyServicesMaindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px 80px;
+  padding: 0% 1%;
+}
+
+.keyServicesCard {
+  i {
+    font-size: 20px;
+  }
+
+  height: 140px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 1px solid black;
+  text-align: center;
+  border-radius: 8px;
+  // border-bottom: 8px solid #fe5858;
+  border-top: 6px solid #fe5858;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2%;
+}
+
+.plans_div {
+  margin-top: 90px;
+}
+
+@media only screen and (max-width: 800px) {
+  .yearly_bill_main,
+  .monthly_bill_main_div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single_bill_main,
+  .single_plan_main_div {
+    width: 80% !important;
+    padding: 5% !important;
+  }
+
+  .service_main_div .contact_us_div {
+    padding: 10% 5%;
+  }
+
+  .service_main_div .contact_us_div .right_div {
+    flex-direction: column;
+  }
+
+  .HomeblogsContainer .right {
+    display: none;
+  }
+
+  .HomeblogsContainer .left {
+    width: 100%;
+  }
+
+  .HomeblogsContainer {
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .service_main_div .contact_us_div .need_help_para {
+    font-size: 1rem;
+  }
+
+  .keyServicesCard {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .yearly_bill_main,
+  .monthly_bill_main_div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single_bill_main,
+  .single_plan_main_div {
+    width: 80% !important;
+    padding: 5% !important;
+  }
+
+  .service_main_div .contact_us_div {
+    padding: 10% 5%;
+  }
+
+  .service_main_div .contact_us_div .right_div {
+    flex-direction: column;
+  }
+
+  .HomeblogsContainer .right {
+    display: none;
+  }
+
+  .HomeblogsContainer .left {
+    width: 100%;
+  }
+
+  .HomeblogsContainer {
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card {
+    width: 100%;
+  }
+
+  .service_main_div .contact_us_div .need_help_para {
+    font-size: 1rem;
+  }
+
+  .keyServicesCard {
+    width: 75%;
+  }
+}

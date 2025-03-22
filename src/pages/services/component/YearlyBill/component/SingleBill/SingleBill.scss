@@ -1,0 +1,32 @@
+.single_bill_main {
+  // border: 1px solid #dddddd;
+  width: 21%;
+  padding: 30px 40px;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
+  .bill_head {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .dotted_img_div {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    .dotted_img {
+      width: 50%;
+    }
+  }
+}
+
+.single_bill_para{
+  line-height: 22px;
+  text-align: justify;
+}
+
+.bill_para{
+  line-height: 20px;
+}

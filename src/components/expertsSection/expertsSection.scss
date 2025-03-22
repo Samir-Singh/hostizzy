@@ -1,0 +1,123 @@
+.expertMainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+  height: auto;
+}
+.expertMainCard {
+  height: 262px;
+  width: 300px;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 4px;
+  border-bottom: 4px solid #fe5858;
+  border-top: 4px solid #fe5858;
+}
+.section-heading {
+  font-weight: 900;
+  font-size: 32px;
+  // margin-bottom: 35px;
+  margin-top: 6%;
+}
+.section-heading-home {
+  font-size: 32px;
+  margin: 0%;
+  margin-bottom: 1.5%;
+  font-weight: 900;
+}
+.xpertMainSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+}
+.cardExpert {
+  width: 20%;
+  height: 400px;
+  padding: 15px;
+  background: linear-gradient(#ffffff 50%, #fe5858 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 36px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+
+  @media (max-width: 800px) {
+    width: 40%;
+  }
+}
+.cardExpert h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #1f194c;
+  margin: 1em 0;
+}
+.cardExpert p {
+  color: #575a7b;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+.icon-wrapper {
+  background-color: #fe5858;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.cardExpert:hover {
+  background-position: 0 100%;
+}
+.cardExpert:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #fe5858;
+}
+.cardExpert:hover h4 {
+  color: #ffffff;
+}
+.cardExpert:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    //   flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    // padding: 1em 3em;
+  }
+  .column {
+    //   flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cardExpert {
+    width: 87%;
+    height: auto;
+    padding: 10% 2%;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../styles/colors.scss";
+@import "../../styles/dimentions.scss";
+
+.dialog___title {
+  font-size: 25px !important;
+  font-weight: $fontWeight7 !important;
+}
+.button__submit {
+  background-color: $primaryColor !important;
+  text-transform: capitalize !important;
+}
+.select_element {
+  width: 48%;
+}
+
+.things_to_know_modal {
+  padding: 0% 3%;
+  padding-bottom: 3%;
+  .modal_heading {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .modal_heading_para {
+    font-size: 0.9em;
+  }
+  .things_data {
+    margin-top: 1em;
+    border-bottom: 1px solid rgb(220, 215, 215);
+    padding: 2% 0%;
+  }
+}
+
+.select_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  margin-top: 3%;
+}
+
+.date_filed {
+  width: 48%;
+  margin-top: 0.5em;
+}
+
+.date_para {
+  margin-bottom: 0.4em;
+  font-size: 0.8em;
+  font-weight: 600;
+}

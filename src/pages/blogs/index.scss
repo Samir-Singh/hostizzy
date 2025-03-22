@@ -1,0 +1,296 @@
+@import "../../styles/colors.scss";
+@import "../../styles/dimentions.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400&family=Inter:wght@300;400&family=Nunito:wght@600&family=Poppins:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+.blogs_container {
+  .blog___slider_form_section {
+    width: 100%;
+    min-height: 300px;
+    height: 300px;
+    max-height: 800px;
+    background-image: url("../../assets/images/homestay3.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    @media (max-width: 975px) {
+      flex-direction: column;
+      height: fit-content;
+      padding-bottom: 5px;
+      height: 90%;
+    }
+    .blog___image__container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      @media (max-width: 975px) {
+        width: 100%;
+        margin-top: 30%;
+      }
+      .blog___image__text_container {
+        height: 100px;
+        border-left: 6px solid $primaryColor2;
+        padding: 0px 0px 0px 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .blog__image_text_head {
+          color: $white;
+          font-size: 50px;
+          font-weight: $fontWeight7;
+          @media (max-width: 575px) {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  .blog_container_single {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .blog_details_section {
+      // height: 380px;
+      margin: 20px 0px;
+      border-radius: 14px;
+      overflow: hidden;
+      @media (max-width: 993px) {
+        // height: fit-content;
+      }
+      .blog__details {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        .blog_image_container {
+          cursor: pointer;
+        }
+        .blog_details_text {
+          height: calc(300px - 190px);
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          font-family: "DM Sans ";
+          @media (max-width: 993px) {
+            height: fit-content;
+          }
+          .blog_details_heading {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: $fontWeight6;
+            margin-bottom: 16px;
+            font-family: DM Sans, sans-serif;
+            @media (max-width: 993px) {
+              font-size: 20px;
+            }
+          }
+          .read___more__button {
+            color: $white;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-family: DM Sans, sans-serif;
+          }
+          .blog_details__sub_data {
+            font-size: 13px;
+            @media (max-width: 993px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .active__card {
+      transition: all 0.4s ease-in-out;
+      background-color: $primaryColor;
+      color: $white;
+    }
+  }
+}
+
+.blog__details__container {
+  width: 99%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .main_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2% 6%;
+    gap: 5%;
+    .left_div {
+      width: 70%;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 4px;
+      padding: 2% 4%;
+      .btn_div {
+        .btn {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          padding: 0.5% 1%;
+        }
+      }
+      .blog_heading {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .blog_small_desc {
+        display: flex;
+        gap: 2%;
+        font-size: 0.8rem;
+        color: grey;
+        .small_div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          .desc_img {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .blog_img_div {
+        margin-top: 4%;
+        .blog_img {
+          object-fit: contain;
+          border-radius: 4px;
+        }
+      }
+    }
+    .right_div {
+      width: 30%;
+      .margin_top {
+        margin-top: 10%;
+      }
+      .position_sticky {
+        position: sticky;
+        top: 100px;
+      }
+      .some_more_blogs_div {
+        padding: 4%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 4px;
+        .social_network_head {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin: 0px;
+          margin-bottom: 3%;
+        }
+        .flex_network_div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5%;
+          .social_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 5%;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            margin-bottom: 2%;
+            gap: 5%;
+            cursor: pointer;
+            .social_icon {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .more_blogs_div {
+          font-size: 0.8rem;
+          color: $primaryColor;
+          display: flex;
+          margin-bottom: 3%;
+        }
+
+        .remain_blog_div {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          gap: 5%;
+          .remain_blog_img_div {
+            width: 60px;
+            height: 60px;
+            // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 0.8%;
+            border-radius: 4px;
+            .remain_blog_img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 4px;
+            }
+          }
+          .remain_blog_desc_div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .remain_blog_head {
+              cursor: pointer;
+              font-size: 1rem;
+              font-weight: 600;
+              margin: 0px;
+              // width: 25ch;
+              // white-space: nowrap;
+              // overflow: hidden;
+              // text-overflow: ellipsis;
+            }
+            .remain_blog_head:hover {
+              color: #fe5858;
+            }
+            .remain_blog_para {
+              display: flex;
+              align-items: center;
+              gap: 2%;
+              font-size: 0.7rem;
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 893px) {
+    margin: 15px auto;
+  }
+  .blog__details__title {
+    font-size: 28px;
+    font-weight: $fontWeight7;
+    margin: 15px 0px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.blog__desciption {
+  padding: 0px 0px !important;
+  text-align: justify !important ;
+  margin-top: 4%;
+}
+.blog__image {
+  width: 85% !important;
+  border-radius: 20px;
+}

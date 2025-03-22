@@ -1,0 +1,42 @@
+.tabsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom:0px 
+}
+.tabs{
+    height:40px;
+    width: auto;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    color:#000;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+.tabsSelected{
+    padding: 0px 10px;
+    height:40px;
+    width: auto;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    color:#fff;
+    background-color: #000;
+    font-weight: bold;
+}
+.iconContainer{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}

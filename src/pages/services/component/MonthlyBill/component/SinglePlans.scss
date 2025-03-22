@@ -1,0 +1,70 @@
+.single_plan_main_div {
+  // border: 1px solid #dddddd;
+  border-radius: 8px;
+  width: 21%;
+  padding: 30px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  &:hover{
+    background-color: #eb675312;
+  }
+  .top_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content_div {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .plan_name {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .plan_fees {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      .plan_duration {
+        font-weight: 11px;
+        color: #181a20;
+      }
+    }
+  }
+
+  .bottom_div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .details_para {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+      color: #181a20;
+      gap: 10px;
+      line-height: 22px;
+      // text-align: justify;
+    }
+  }
+
+  .btn_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    .btn {
+      background-color: #fe5858;
+      padding: 10px 20px;
+      outline: none;
+      border: 1px solid #fe5858;
+      font-size: 16px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
